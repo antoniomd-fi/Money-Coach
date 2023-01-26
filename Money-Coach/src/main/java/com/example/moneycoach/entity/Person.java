@@ -1,20 +1,25 @@
 package com.example.moneycoach.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 @Entity
 @Data
-@RestResource(rel = "Users", path = "users")
+@NoArgsConstructor
+@RequiredArgsConstructor()
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Getter @Setter private long id;
     @Column
-    @Getter @Setter private String name;
+    @NotEmpty (message = "The User must have a name")
+    @Getter @Setter @NonNull private String name;
     @Column
-    @Getter @Setter private String lastname;
+    @NotEmpty(message = "The User must have a lastname")
+    @Getter @Setter @NonNull  private String lastname;
     @Column
-    @Getter @Setter private String username;
+    @NotEmpty(message = "The User must have a username")
+    @Getter @Setter  @NonNull  private String username;
 }

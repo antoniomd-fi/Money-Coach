@@ -1,0 +1,45 @@
+package com.example.moneycoach.service;
+
+import com.example.moneycoach.entity.Entry;
+import com.example.moneycoach.repository.EntryRepository;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.List;
+
+@Slf4j
+@Service
+public class EntryService {
+
+    @Autowired
+    private EntryRepository entryRepository;
+
+    public void create (@RequestBody Entry addedEntry){
+        entryRepository.save(addedEntry);
+        log.info("Entry Added Successfully");
+    }
+    public Entry getById(long id) {
+        return this.entryRepository.findById(id).get();
+    }
+
+    public List<Entry> getTable(){
+        return entryRepository.findAll(Sort.by("id").ascending());
+    }
+
+    public Entry update(Integer id, String concept, long amount){
+        Entry entry = getById(id);
+        entry.setConcept(concept);
+        entry.setAmount(amount);
+        entryRepository.save(entry);
+        log.info("Entry Updated Successfully");
+        return entry;
+    }
+    public void delete (long id){
+        Entry entry = getById(id);
+        entryRepository.delete(entry);
+        log.warn("Entry Deleted");
+    }
+}

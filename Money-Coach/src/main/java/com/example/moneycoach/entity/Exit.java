@@ -19,7 +19,9 @@ public class Exit {
     @NotEmpty(message = "The Exit must have a amount") @Getter @Setter private long amount;
     @Column
     @Past(message = "The Exit date must be a past date") @Getter @Setter private LocalDateTime date;
-    @ManyToOne(optional = false)
-    Person person;
+
+    @Column()
+    @NotNull(message = "The Entry myst have a user Id")
+    @Getter @Setter long personId;
 
 }
