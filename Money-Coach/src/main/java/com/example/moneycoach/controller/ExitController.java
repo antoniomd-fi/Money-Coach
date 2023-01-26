@@ -35,7 +35,7 @@ public class ExitController {
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
 
-    @GetMapping("/getExit{id}")
+    @GetMapping("/getExit/{id}")
     public  ResponseEntity<?> getEntry (@PathVariable("id") long id){
         Exit exit;
         try{
