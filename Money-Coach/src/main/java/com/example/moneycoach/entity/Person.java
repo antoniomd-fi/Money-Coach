@@ -3,6 +3,7 @@ package com.example.moneycoach.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
+import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 @Entity
@@ -21,5 +22,6 @@ public class Person {
     @Getter @Setter @NonNull  private String lastname;
     @Column
     @NotEmpty(message = "The User must have a username")
+    //@UniqueElements (message = "The username has alredy in use")
     @Getter @Setter  @NonNull  private String username;
 }

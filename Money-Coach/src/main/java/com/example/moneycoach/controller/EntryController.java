@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -23,7 +24,7 @@ public class EntryController {
             this.entryService.create(entry);
         }catch (Exception e){
             log.error("Something was wrong");
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
         }
         return new ResponseEntity<>( HttpStatus.OK);
     }
@@ -35,16 +36,19 @@ public class EntryController {
     }
 
     @GetMapping("/getEntry/{id}")
-    public  ResponseEntity<Entry> getEntry (@PathVariable("id") long id){
+    public  ResponseEntity<?> getEntry (@PathVariable("id") long id){
         Entry entry;
         try{
             entry = this.entryService.getById(id);
         }
         catch (Exception e){
             log.error("Something was wrong, the user doesn't exists");
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
         }
-        return new ResponseEntity<>(entry, HttpStatus.OK);
+        if (entry == null){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Exit doesn't exists in database");
+        }
+        return  ResponseEntity.ok(entry);
     }
 
     @DeleteMapping("/deleteEntry/{id}")

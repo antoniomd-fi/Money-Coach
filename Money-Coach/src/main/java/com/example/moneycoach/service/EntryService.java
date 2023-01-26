@@ -22,7 +22,10 @@ public class EntryService {
         log.info("Entry Added Successfully");
     }
     public Entry getById(long id) {
-        return this.entryRepository.findById(id).get();
+        if (entryRepository.existsById(id)){
+            return this.entryRepository.findById(id).get();
+        }
+        return null;
     }
 
     public List<Entry> getTable(){

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -23,7 +24,7 @@ public class ExitController {
             this.exitService.create(exit);
         }catch (Exception e){
             log.error("Something was wrong");
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
         }
         return new ResponseEntity<>( HttpStatus.OK);
     }
@@ -35,16 +36,22 @@ public class ExitController {
     }
 
     @GetMapping("/getExit{id}")
-    public  ResponseEntity<Exit> getEntry (@PathVariable("id") long id){
-        Exit entry;
+    public  ResponseEntity<?> getEntry (@PathVariable("id") long id){
+        Exit exit;
         try{
-            entry = this.exitService.getById(id);
+            exit = this.exitService.getById(id);
         }
         catch (Exception e){
             log.error("Something was wrong, the user doesn't exists");
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
         }
-        return new ResponseEntity<>(entry, HttpStatus.OK);
+        if (exit == null){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry doesn't exists in database");
+        }
+        else{
+            return  ResponseEntity.ok(exit);
+        }
+
     }
 
     @DeleteMapping("/deleteExit/{id}")

@@ -25,7 +25,10 @@ public class ExitService {
         log.info("Exit Added Successfully");
     }
     public Exit getById(long id) {
-        return this.exitRepository.findById(id).get();
+        if (exitRepository.existsById(id)){
+            return this.exitRepository.findById(id).get();
+        }
+        return null;
     }
 
     public List<Exit> getTable(){

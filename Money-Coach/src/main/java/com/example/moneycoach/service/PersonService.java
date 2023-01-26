@@ -25,7 +25,10 @@ public class PersonService {
         log.info("User Added Successfully");
     }
     public Person getById(long id) {
-        return  this.personRepository.findById(id).get();
+        if (personRepository.existsById(id)){
+            return  this.personRepository.findById(id).get();
+        }
+        return  null;
     }
 
     public List<Person> getTable(){

@@ -14,11 +14,14 @@ public class Exit {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Getter @Setter private long id;
     @Column
-    @NotEmpty(message = "The Exit must have a concept") @Getter @Setter private String concept;
+    @NotEmpty(message = "The Exit must have a concept")
+    @Getter @Setter private String concept;
     @Column
-    @NotEmpty(message = "The Exit must have a amount") @Getter @Setter private long amount;
+    @NotNull(message = "The Exit must have a amount")
+    @Getter @Setter private double amount;
     @Column
-    @Past(message = "The Exit date must be a past date") @Getter @Setter private LocalDateTime date;
+    @Past(message = "The Exit date must be a past date")
+    @Getter @Setter private LocalDateTime date;
 
     @Column()
     @NotNull(message = "The Entry myst have a user Id")

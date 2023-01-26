@@ -104,3 +104,675 @@
 [INFO ] [26/01/2023 12:15:19 a. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 [INFO ] [26/01/2023 12:15:19 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 [INFO ] [26/01/2023 12:15:19 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 12:24:03 a. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 30292 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 12:24:03 a. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 12:24:04 a. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 12:24:04 a. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 134 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 12:24:04 a. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 12:24:04 a. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 12:24:04 a. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 12:24:04 a. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 12:24:04 a. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 12:24:05 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 12:24:05 a. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1568 ms
+[INFO ] [26/01/2023 12:24:05 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 12:24:05 a. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 12:24:05 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 12:24:05 a. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 12:24:05 a. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 12:24:05 a. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 12:24:05 a. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 12:24:05 a. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 12:24:06 a. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 12:24:06 a. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 12:24:06 a. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 12:24:07 a. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 12:24:07 a. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 12:24:07 a. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.654 seconds (process running for 5.331)
+[INFO ] [26/01/2023 12:25:56 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 12:25:56 a. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 12:25:56 a. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[ERROR] [26/01/2023 12:25:56 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotEmpty' validating type 'java.lang.Long'. Check configuration for 'amount'] with root cause
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotEmpty' validating type 'java.lang.Long'. Check configuration for 'amount'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:247)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] [26/01/2023 12:26:18 a. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 12:26:18 a. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 12:26:18 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 12:26:18 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 12:26:34 a. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 14472 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 12:26:34 a. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 12:26:35 a. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 12:26:35 a. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 128 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 12:26:35 a. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 12:26:35 a. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 12:26:35 a. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 12:26:35 a. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 12:26:35 a. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 12:26:35 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 12:26:35 a. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1473 ms
+[INFO ] [26/01/2023 12:26:35 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 12:26:36 a. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 12:26:36 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 12:26:36 a. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 12:26:36 a. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 12:26:36 a. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 12:26:36 a. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 12:26:36 a. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 12:26:37 a. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 12:26:37 a. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 12:26:37 a. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 12:26:38 a. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 12:26:38 a. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 12:26:38 a. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.413 seconds (process running for 5.065)
+[INFO ] [26/01/2023 12:27:15 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 12:27:15 a. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 12:27:15 a. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[INFO ] [26/01/2023 12:27:21 a. m.] [com.example.moneycoach.service.ExitService] - Exit Added Successfully
+[WARN ] [26/01/2023 12:28:22 a. m.] [com.example.moneycoach.service.ExitService] - Exit Deleted
+[INFO ] [26/01/2023 12:28:37 a. m.] [com.example.moneycoach.service.ExitService] - Exit Added Successfully
+[INFO ] [26/01/2023 12:29:05 a. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 12:29:05 a. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 12:29:05 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 12:29:05 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 12:30:47 a. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 17268 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 12:30:47 a. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 12:30:48 a. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 12:30:48 a. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 133 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 12:30:48 a. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 12:30:48 a. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 12:30:48 a. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 12:30:48 a. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 12:30:48 a. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 12:30:48 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 12:30:48 a. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1489 ms
+[INFO ] [26/01/2023 12:30:48 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 12:30:49 a. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 12:30:49 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 12:30:49 a. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 12:30:49 a. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 12:30:49 a. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 12:30:49 a. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 12:30:49 a. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 12:30:50 a. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 12:30:50 a. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 12:30:50 a. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 12:30:51 a. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 12:30:51 a. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 12:30:51 a. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.511 seconds (process running for 5.162)
+[INFO ] [26/01/2023 12:30:56 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 12:30:56 a. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 12:30:56 a. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[ERROR] [26/01/2023 12:30:56 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotEmpty' validating type 'java.lang.Double'. Check configuration for 'amount'] with root cause
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotEmpty' validating type 'java.lang.Double'. Check configuration for 'amount'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:247)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] [26/01/2023 12:31:04 a. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 12:31:04 a. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 12:31:04 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 12:31:04 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 12:31:15 a. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 22420 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 12:31:15 a. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 12:31:15 a. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 12:31:15 a. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 127 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1481 ms
+[INFO ] [26/01/2023 12:31:16 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 12:31:16 a. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 12:31:16 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 12:31:16 a. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 12:31:17 a. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 12:31:17 a. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 12:31:17 a. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 12:31:17 a. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 12:31:18 a. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 12:31:19 a. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 12:31:19 a. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 12:31:19 a. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.448 seconds (process running for 5.087)
+[INFO ] [26/01/2023 12:31:22 a. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 12:31:22 a. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 12:31:22 a. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[INFO ] [26/01/2023 12:31:22 a. m.] [com.example.moneycoach.service.ExitService] - Exit Added Successfully
+[WARN ] [26/01/2023 12:31:27 a. m.] [com.example.moneycoach.service.ExitService] - Exit Deleted
+[INFO ] [26/01/2023 12:31:30 a. m.] [com.example.moneycoach.service.ExitService] - Exit Added Successfully
+[WARN ] [26/01/2023 12:31:51 a. m.] [com.example.moneycoach.service.ExitService] - Exit Deleted
+[INFO ] [26/01/2023 12:31:58 a. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 12:31:58 a. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 12:31:58 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 12:31:58 a. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 01:43:28 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 15140 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 01:43:28 p. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 01:43:29 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 01:43:29 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 259 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 01:43:29 p. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 01:43:30 p. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 01:43:30 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 01:43:30 p. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 01:43:30 p. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 01:43:30 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 01:43:30 p. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 2211 ms
+[INFO ] [26/01/2023 01:43:30 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 01:43:30 p. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 01:43:30 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 01:43:30 p. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 01:43:30 p. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 01:43:30 p. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 01:43:31 p. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 01:43:31 p. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 01:43:32 p. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 01:43:32 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 01:43:32 p. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 01:43:32 p. m.] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception with message: Ambiguous @ExceptionHandler method mapped for [class org.springframework.web.bind.MethodArgumentNotValidException]: {public org.springframework.http.ResponseEntity com.example.moneycoach.controller.handlers.GlobalHandler.handleStatusException(org.springframework.web.bind.MethodArgumentNotValidException,org.springframework.web.context.request.WebRequest), public final org.springframework.http.ResponseEntity org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler.handleException(java.lang.Exception,org.springframework.web.context.request.WebRequest) throws java.lang.Exception}
+[INFO ] [26/01/2023 01:43:32 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 01:43:32 p. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 01:43:32 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 01:43:32 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 01:43:32 p. m.] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+[INFO ] [26/01/2023 01:43:32 p. m.] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[ERROR] [26/01/2023 01:43:32 p. m.] [org.springframework.boot.SpringApplication] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception with message: Ambiguous @ExceptionHandler method mapped for [class org.springframework.web.bind.MethodArgumentNotValidException]: {public org.springframework.http.ResponseEntity com.example.moneycoach.controller.handlers.GlobalHandler.handleStatusException(org.springframework.web.bind.MethodArgumentNotValidException,org.springframework.web.context.request.WebRequest), public final org.springframework.http.ResponseEntity org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler.handleException(java.lang.Exception,org.springframework.web.context.request.WebRequest) throws java.lang.Exception}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.moneycoach.MoneyCoachApplication.main(MoneyCoachApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception with message: Ambiguous @ExceptionHandler method mapped for [class org.springframework.web.bind.MethodArgumentNotValidException]: {public org.springframework.http.ResponseEntity com.example.moneycoach.controller.handlers.GlobalHandler.handleStatusException(org.springframework.web.bind.MethodArgumentNotValidException,org.springframework.web.context.request.WebRequest), public final org.springframework.http.ResponseEntity org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler.handleException(java.lang.Exception,org.springframework.web.context.request.WebRequest) throws java.lang.Exception}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class org.springframework.web.bind.MethodArgumentNotValidException]: {public org.springframework.http.ResponseEntity com.example.moneycoach.controller.handlers.GlobalHandler.handleStatusException(org.springframework.web.bind.MethodArgumentNotValidException,org.springframework.web.context.request.WebRequest), public final org.springframework.http.ResponseEntity org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler.handleException(java.lang.Exception,org.springframework.web.context.request.WebRequest) throws java.lang.Exception}
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114)
+	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:276)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:243)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1063)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1005)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 20 common frames omitted
+[INFO ] [26/01/2023 01:45:01 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 15608 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 01:45:01 p. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 01:45:02 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 01:45:02 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 134 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1438 ms
+[INFO ] [26/01/2023 01:45:03 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 01:45:03 p. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 01:45:03 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 01:45:03 p. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 01:45:03 p. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 01:45:04 p. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 01:45:04 p. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 01:45:04 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 01:45:05 p. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 01:45:05 p. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 01:45:05 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 01:45:05 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.54 seconds (process running for 5.186)
+[INFO ] [26/01/2023 01:45:49 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:45:49 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:45:49 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[INFO ] [26/01/2023 01:45:54 p. m.] [com.example.moneycoach.service.PersonService] - User Added Successfully
+[ERROR] [26/01/2023 01:46:02 p. m.] [com.example.moneycoach.controller.PersonController] - Something was wrong, the user doesn't exists
+[INFO ] [26/01/2023 01:46:40 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 01:46:40 p. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 01:46:40 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 01:46:40 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 01:48:50 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 4208 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 01:48:50 p. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 01:48:51 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 01:48:51 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 139 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 01:48:51 p. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 01:48:51 p. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 01:48:52 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 01:48:52 p. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 01:48:52 p. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 01:48:52 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 01:48:52 p. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1476 ms
+[INFO ] [26/01/2023 01:48:52 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 01:48:52 p. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 01:48:52 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 01:48:52 p. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 01:48:52 p. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 01:48:52 p. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 01:48:52 p. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 01:48:52 p. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 01:48:53 p. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 01:48:53 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 01:48:53 p. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 01:48:54 p. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 01:48:54 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 01:48:54 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.473 seconds (process running for 5.126)
+[INFO ] [26/01/2023 01:48:58 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:48:58 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:48:58 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[INFO ] [26/01/2023 01:48:58 p. m.] [com.example.moneycoach.service.PersonService] - User Added Successfully
+[ERROR] [26/01/2023 01:49:05 p. m.] [com.example.moneycoach.controller.PersonController] - Something was wrong, the user doesn't exists
+[INFO ] [26/01/2023 01:49:12 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 01:49:12 p. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 01:49:12 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 01:49:12 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 01:51:00 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 6380 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 01:51:00 p. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 01:51:01 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 01:51:01 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 140 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 01:51:01 p. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 01:51:01 p. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 01:51:01 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 01:51:01 p. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 01:51:01 p. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 01:51:02 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 01:51:02 p. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1466 ms
+[INFO ] [26/01/2023 01:51:02 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 01:51:02 p. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 01:51:02 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 01:51:02 p. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 01:51:02 p. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 01:51:02 p. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 01:51:02 p. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 01:51:02 p. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 01:51:03 p. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 01:51:03 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 01:51:03 p. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 01:51:04 p. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 01:51:04 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 01:51:04 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.492 seconds (process running for 5.191)
+[INFO ] [26/01/2023 01:51:07 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:51:07 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:51:07 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[ERROR] [26/01/2023 01:51:07 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'org.hibernate.validator.constraints.UniqueElements' validating type 'java.lang.String'. Check configuration for 'username'] with root cause
+jakarta.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'org.hibernate.validator.constraints.UniqueElements' validating type 'java.lang.String'. Check configuration for 'username'
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getExceptionForNullValidator(ConstraintTree.java:116)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.getInitializedConstraintValidator(ConstraintTree.java:162)
+	at org.hibernate.validator.internal.engine.constraintvalidation.SimpleConstraintTree.validateConstraints(SimpleConstraintTree.java:58)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:75)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.doValidateConstraint(MetaConstraint.java:130)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:123)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateMetaConstraint(ValidatorImpl.java:555)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForSingleDefaultGroupElement(ValidatorImpl.java:518)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:488)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:450)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:400)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:172)
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:104)
+	at org.springframework.boot.autoconfigure.validation.ValidatorAdapter.validate(ValidatorAdapter.java:66)
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:933)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:247)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:142)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] [26/01/2023 01:51:22 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 01:51:22 p. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 01:51:22 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 01:51:23 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 01:52:19 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 12564 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 01:52:19 p. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 01:52:19 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 01:52:20 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 136 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 01:52:20 p. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 01:52:20 p. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 01:52:20 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 01:52:20 p. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 01:52:20 p. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 01:52:20 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 01:52:20 p. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1442 ms
+[INFO ] [26/01/2023 01:52:20 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 01:52:20 p. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 01:52:20 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 01:52:20 p. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 01:52:21 p. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 01:52:21 p. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 01:52:21 p. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 01:52:21 p. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 01:52:22 p. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 01:52:22 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 01:52:22 p. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 01:52:23 p. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 01:52:23 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 01:52:23 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.402 seconds (process running for 4.994)
+[INFO ] [26/01/2023 01:52:26 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:52:26 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:52:26 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[INFO ] [26/01/2023 01:52:26 p. m.] [com.example.moneycoach.service.PersonService] - User Added Successfully
+[ERROR] [26/01/2023 01:52:35 p. m.] [com.example.moneycoach.controller.PersonController] - Something was wrong, the user doesn't exists
+[INFO ] [26/01/2023 01:52:46 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 01:52:46 p. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 01:52:46 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 01:52:46 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 01:54:17 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 14668 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 01:54:17 p. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 01:54:17 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 01:54:18 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 137 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 01:54:18 p. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 01:54:18 p. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 01:54:18 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 01:54:18 p. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 01:54:18 p. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 01:54:18 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 01:54:18 p. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1469 ms
+[INFO ] [26/01/2023 01:54:18 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 01:54:18 p. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 01:54:18 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 01:54:18 p. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 01:54:19 p. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 01:54:19 p. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 01:54:19 p. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 01:54:19 p. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 01:54:20 p. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 01:54:20 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 01:54:20 p. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 01:54:21 p. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 01:54:21 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 01:54:21 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.489 seconds (process running for 5.244)
+[INFO ] [26/01/2023 01:54:25 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:54:25 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:54:25 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[INFO ] [26/01/2023 01:54:25 p. m.] [com.example.moneycoach.service.PersonService] - User Added Successfully
+[ERROR] [26/01/2023 01:54:27 p. m.] [com.example.moneycoach.controller.PersonController] - Something was wrong, the user doesn't exists
+[INFO ] [26/01/2023 01:55:40 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 01:55:40 p. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 01:55:41 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 01:55:41 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 01:55:46 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 1700 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 01:55:46 p. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 01:55:46 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 01:55:46 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 133 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1411 ms
+[INFO ] [26/01/2023 01:55:47 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 01:55:47 p. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 01:55:47 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 01:55:47 p. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 01:55:48 p. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 01:55:48 p. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 01:55:48 p. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 01:55:48 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 01:55:49 p. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 01:55:49 p. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 01:55:49 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 01:55:49 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.266 seconds (process running for 4.869)
+[INFO ] [26/01/2023 01:56:21 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:56:21 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:56:21 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[INFO ] [26/01/2023 01:56:21 p. m.] [com.example.moneycoach.service.PersonService] - User Added Successfully
+[ERROR] [26/01/2023 01:56:33 p. m.] [com.example.moneycoach.controller.PersonController] - Something was wrong, the user doesn't exists
+[INFO ] [26/01/2023 01:56:45 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 01:56:45 p. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 01:56:45 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 01:56:45 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 01:56:55 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 4448 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 01:56:55 p. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 01:56:56 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 01:56:56 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 143 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1494 ms
+[INFO ] [26/01/2023 01:56:57 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 01:56:57 p. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 01:56:57 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 01:56:57 p. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 01:56:58 p. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 01:56:58 p. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 01:56:59 p. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 01:56:59 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 01:56:59 p. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 01:57:00 p. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 01:57:00 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 01:57:00 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.699 seconds (process running for 5.342)
+[INFO ] [26/01/2023 01:57:02 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:57:02 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:57:02 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[INFO ] [26/01/2023 01:57:02 p. m.] [com.example.moneycoach.service.PersonService] - User Added Successfully
+[ERROR] [26/01/2023 01:57:07 p. m.] [com.example.moneycoach.controller.PersonController] - Something was wrong, the user doesn't exists
+[INFO ] [26/01/2023 01:57:24 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 01:57:24 p. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 01:57:24 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 01:57:24 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[INFO ] [26/01/2023 01:57:48 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Starting MoneyCoachApplication using Java 17.0.5 with PID 4032 (D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach\target\classes started by USER in D:\USER\Escritorio\Proyectos\BEDU\HSBC\TP Developer Engineering\Java Backend Intermedio\Money-Coach\Money-Coach)
+[INFO ] [26/01/2023 01:57:48 p. m.] [com.example.moneycoach.MoneyCoachApplication] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] [26/01/2023 01:57:49 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] [26/01/2023 01:57:49 p. m.] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 133 ms. Found 3 JPA repository interfaces.
+[INFO ] [26/01/2023 01:57:49 p. m.] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] [26/01/2023 01:57:49 p. m.] [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[INFO ] [26/01/2023 01:57:50 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 3000 (http)
+[INFO ] [26/01/2023 01:57:50 p. m.] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[INFO ] [26/01/2023 01:57:50 p. m.] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.5]
+[INFO ] [26/01/2023 01:57:50 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[INFO ] [26/01/2023 01:57:50 p. m.] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1438 ms
+[INFO ] [26/01/2023 01:57:50 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[INFO ] [26/01/2023 01:57:50 p. m.] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/test user=SA
+[INFO ] [26/01/2023 01:57:50 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[INFO ] [26/01/2023 01:57:50 p. m.] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/test'
+[INFO ] [26/01/2023 01:57:50 p. m.] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] [26/01/2023 01:57:50 p. m.] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.1.6.Final
+[WARN ] [26/01/2023 01:57:50 p. m.] [org.hibernate.orm.deprecation] - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[INFO ] [26/01/2023 01:57:50 p. m.] [SQL dialect] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] [26/01/2023 01:57:51 p. m.] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] [26/01/2023 01:57:51 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] [26/01/2023 01:57:52 p. m.] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] [26/01/2023 01:57:52 p. m.] [org.springframework.core.LocalVariableTableParameterNameDiscoverer] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+[INFO ] [26/01/2023 01:57:52 p. m.] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 3000 (http) with context path ''
+[INFO ] [26/01/2023 01:57:52 p. m.] [com.example.moneycoach.MoneyCoachApplication] - Started MoneyCoachApplication in 4.464 seconds (process running for 5.064)
+[INFO ] [26/01/2023 01:57:55 p. m.] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:57:55 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[INFO ] [26/01/2023 01:57:55 p. m.] [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+[INFO ] [26/01/2023 01:57:55 p. m.] [com.example.moneycoach.service.PersonService] - User Added Successfully
+[INFO ] [26/01/2023 01:58:11 p. m.] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] [26/01/2023 01:58:11 p. m.] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] [26/01/2023 01:58:11 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[INFO ] [26/01/2023 01:58:11 p. m.] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.

@@ -1,5 +1,6 @@
-package com.example.moneycoach.entity;
+package com.example.moneycoach.entity.builders;
 
+import com.example.moneycoach.entity.ErrorAnswer;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
