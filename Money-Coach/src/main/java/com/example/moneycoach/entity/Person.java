@@ -1,14 +1,13 @@
 package com.example.moneycoach.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
 import lombok.*;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 @Entity
 @Data
-@RestResource(rel = "Users", path = "user")
-public class User {
+@RestResource(rel = "Users", path = "users")
+public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Getter @Setter private long id;

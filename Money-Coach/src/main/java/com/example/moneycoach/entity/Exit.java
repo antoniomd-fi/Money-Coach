@@ -1,6 +1,7 @@
 package com.example.moneycoach.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 import lombok.*;
 import org.springframework.data.rest.core.annotation.RestResource;
 
@@ -13,12 +14,12 @@ public class Exit {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Getter @Setter private long id;
     @Column
-    @Getter @Setter private String concept;
+    @NotEmpty(message = "The Exit must have a concept") @Getter @Setter private String concept;
     @Column
-    @Getter @Setter private long amount;
+    @NotEmpty(message = "The Exit must have a amount") @Getter @Setter private long amount;
     @Column
-    @Getter @Setter private LocalDateTime date;
+    @Past(message = "The Exit date must be a past date") @Getter @Setter private LocalDateTime date;
     @ManyToOne(optional = false)
-    User user;
+    Person person;
 
 }
