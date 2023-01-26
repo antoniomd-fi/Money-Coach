@@ -48,4 +48,18 @@ public class ExitService {
         exitRepository.delete(exit);
         log.warn("Exit Deleted");
     }
+
+    public Double getTotalAmountByUser(long id){
+
+        List<Exit> exits = exitRepository.findAll();
+        Double total = 0.0;
+
+        for (int i = 0; i<exits.size(); i ++){
+            if (exits.get(i).getId() == id){
+                total += exits.get(i).getAmount();
+            }
+        }
+
+        return total;
+    }
 }

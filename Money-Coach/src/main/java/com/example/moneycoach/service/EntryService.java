@@ -45,4 +45,18 @@ public class EntryService {
         entryRepository.delete(entry);
         log.warn("Entry Deleted");
     }
+
+    public Double getTotalAmountByUser(long id){
+
+        List<Entry> entries = entryRepository.findAll();
+        Double total = 0.0;
+
+        for (int i = 0; i<entries.size(); i ++){
+            if (entries.get(i).getId() == id){
+                total += entries.get(i).getAmount();
+            }
+        }
+
+        return total;
+    }
 }
