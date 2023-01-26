@@ -35,7 +35,7 @@ public class ExitService {
         return exitRepository.findAll(Sort.by("id").ascending());
     }
 
-    public Exit update(Integer id, String concept, long amount){
+    public Exit update(Integer id, String concept, Double amount){
         Exit exit = getById(id);
         exit.setConcept(concept);
         exit.setAmount(amount);
@@ -55,7 +55,7 @@ public class ExitService {
         Double total = 0.0;
 
         for (int i = 0; i<exits.size(); i ++){
-            if (exits.get(i).getId() == id){
+            if (exits.get(i).getPersonId() == id){
                 total += exits.get(i).getAmount();
             }
         }

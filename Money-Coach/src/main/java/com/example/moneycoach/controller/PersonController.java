@@ -1,6 +1,8 @@
 package com.example.moneycoach.controller;
 
 import com.example.moneycoach.entity.Person;
+import com.example.moneycoach.service.EntryService;
+import com.example.moneycoach.service.ExitService;
 import com.example.moneycoach.service.PersonService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -20,6 +22,10 @@ public class PersonController {
 
     @Autowired
     public PersonService personService;
+    @Autowired
+    private EntryService entryService;
+    @Autowired
+    private ExitService exitService;
     @PostMapping("/addUser")
     public ResponseEntity<Void>createUser(@Valid @RequestBody Person person){
         try{
@@ -57,7 +63,24 @@ public class PersonController {
     }
 
     @DeleteMapping("/deleteUser/{id}")
-    public void deletePerson (@PathVariable("id") Integer id){
+    public void deletePerson (@PathVariable("id") long id){
         this.personService.delete(id);
+    }
+
+    @GetMapping("/getBalance/{id}")
+    public Double getBalance(@PathVariable("id") long id){
+        Double balance = 0.0;
+
+        if (personService.getById(id) == null){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User doesn't exists in database");
+        }
+        try {
+            balance = entryService.getTotalAmountByUser(id) - exitService.getTotalAmountByUser(id);
+        } catch (Exception e){
+            log.error("Something was wrong, the user doesn't exists");
+            throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
+        }
+
+        return balance;
     }
 }

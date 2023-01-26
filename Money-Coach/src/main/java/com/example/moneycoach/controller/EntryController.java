@@ -2,6 +2,7 @@ package com.example.moneycoach.controller;
 
 import com.example.moneycoach.entity.Entry;
 import com.example.moneycoach.service.EntryService;
+import com.example.moneycoach.service.PersonService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,9 @@ public class EntryController {
 
     @Autowired
     public EntryService entryService;
+    @Autowired
+    public PersonService personService;
+
     @PostMapping("/addEntry")
     public ResponseEntity<Void> createEntry(@Valid @RequestBody Entry entry){
         try{
@@ -54,5 +58,21 @@ public class EntryController {
     @DeleteMapping("/deleteEntry/{id}")
     public void deleteEntry (@PathVariable("id") Integer id){
         this.entryService.delete(id);
+    }
+
+    @GetMapping("/getTotalEntriesByUser/{id}")
+    public ResponseEntity<?> getTotalAmount (@PathVariable("id") long id){
+        Double total = 0.0;
+        if (personService.getById(id)==null){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User doesn't exists in database");
+        }
+        try {
+            total = entryService.getTotalAmountByUser(id);
+        }
+        catch (Exception e){
+            log.error("Something was wrong, the user doesn't exists");
+            throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
+        }
+        return  ResponseEntity.ok(total);
     }
 }

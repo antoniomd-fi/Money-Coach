@@ -18,7 +18,7 @@ public class Exit {
     @Getter @Setter private String concept;
     @Column
     @NotNull(message = "The Exit must have a amount")
-    @Getter @Setter private double amount;
+    @Getter @Setter private Double amount;
     @Column
     @Past(message = "The Exit date must be a past date")
     @Getter @Setter private LocalDateTime date;

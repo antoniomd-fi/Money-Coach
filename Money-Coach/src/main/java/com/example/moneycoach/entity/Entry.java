@@ -17,7 +17,7 @@ public class Entry {
 
     @Column
     @NotNull(message = "The Entry must have a amount")
-    @Getter @Setter private double amount;
+    @Getter @Setter private Double amount;
     @Column
     @NotEmpty(message = "The Entry must have a concept")
     @Getter @Setter private String concept;

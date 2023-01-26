@@ -32,7 +32,7 @@ public class EntryService {
         return entryRepository.findAll(Sort.by("id").ascending());
     }
 
-    public Entry update(Integer id, String concept, long amount){
+    public Entry update(Integer id, String concept, Double amount){
         Entry entry = getById(id);
         entry.setConcept(concept);
         entry.setAmount(amount);
@@ -52,7 +52,7 @@ public class EntryService {
         Double total = 0.0;
 
         for (int i = 0; i<entries.size(); i ++){
-            if (entries.get(i).getId() == id){
+            if (entries.get(i).getPersonId() == id){
                 total += entries.get(i).getAmount();
             }
         }
