@@ -26,7 +26,7 @@ public class PersonController {
     private EntryService entryService;
     @Autowired
     private ExitService exitService;
-    @PostMapping("/addUser")
+    @PostMapping("/admin/addUser")
     public ResponseEntity<Void>createUser(@Valid @RequestBody Person person){
         try{
             this.personService.create(person);
@@ -62,7 +62,7 @@ public class PersonController {
         }
     }
 
-    @DeleteMapping("/deleteUser/{id}")
+    @DeleteMapping("/admin/deleteUser/{id}")
     public void deletePerson (@PathVariable("id") long id){
         this.personService.delete(id);
     }

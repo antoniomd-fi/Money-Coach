@@ -39,7 +39,7 @@ public class EntryController {
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
 
-    @GetMapping("/getEntry/{id}")
+    @GetMapping("/admin/getEntry/{id}")
     public  ResponseEntity<?> getEntry (@PathVariable("id") long id){
         Entry entry;
         try{

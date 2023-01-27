@@ -3,8 +3,7 @@ package com.example.moneycoach.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
-import org.springframework.data.rest.core.annotation.RestResource;
-import org.springframework.format.annotation.DateTimeFormat;
+
 
 import java.time.LocalDateTime;
 @Entity
