@@ -3,6 +3,7 @@ package com.example.moneycoach.controller;
 import com.example.moneycoach.entity.Entry;
 import com.example.moneycoach.service.EntryService;
 import com.example.moneycoach.service.PersonService;
+import jakarta.annotation.security.DenyAll;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,14 +24,15 @@ public class EntryController {
     public PersonService personService;
 
     @PostMapping("/addEntry")
-    public ResponseEntity<Void> createEntry(@Valid @RequestBody Entry entry){
+    public ResponseEntity<?> createEntry(@Valid @RequestBody Entry entry){
+        Entry entry1;
         try{
-            this.entryService.create(entry);
+            entry1 = this.entryService.create(entry);
         }catch (Exception e){
             log.error("Something was wrong");
             throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
         }
-        return new ResponseEntity<>( HttpStatus.OK);
+        return new ResponseEntity<>( entry1, HttpStatus.OK);
     }
 
     @GetMapping("/allEntries")

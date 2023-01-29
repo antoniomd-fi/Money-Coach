@@ -22,14 +22,15 @@ public class ExitController {
     private PersonService personService;
 
     @PostMapping("/addExit")
-    public ResponseEntity<Void> createEntry(@Valid @RequestBody Exit exit){
+    public ResponseEntity<?> createEntry(@Valid @RequestBody Exit exit){
+        Exit exit1;
         try{
-            this.exitService.create(exit);
+           exit1 = this.exitService.create(exit);
         }catch (Exception e){
             log.error("Something was wrong");
             throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
         }
-        return new ResponseEntity<>( HttpStatus.OK);
+        return new ResponseEntity<>(exit1, HttpStatus.OK);
     }
 
     @GetMapping("/allExits")

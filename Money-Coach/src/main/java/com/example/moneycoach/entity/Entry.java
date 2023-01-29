@@ -8,6 +8,7 @@ import lombok.*;
 import java.time.LocalDateTime;
 @Entity
 @Data
+
 //@RestResource(rel = "Entries", path = "entry")
 public class Entry {
     @Id
@@ -26,6 +27,5 @@ public class Entry {
     @Column()
     @NotNull(message = "The Entry myst have a user Id")
     @Getter @Setter long personId;
-
 
 }

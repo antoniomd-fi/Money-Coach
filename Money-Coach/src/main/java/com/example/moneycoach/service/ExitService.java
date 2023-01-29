@@ -20,9 +20,10 @@ public class ExitService {
     @Autowired
     private ExitRepository exitRepository;
 
-    public void create (@RequestBody Exit addedExit){
-        exitRepository.save(addedExit);
+    public Exit create (@RequestBody Exit addedExit){
+
         log.info("Exit Added Successfully");
+        return exitRepository.save(addedExit);
     }
     public Exit getById(long id) {
         if (exitRepository.existsById(id)){

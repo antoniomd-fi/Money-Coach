@@ -20,9 +20,10 @@ public class PersonService {
     @Autowired
     private PersonRepository personRepository;
 
-    public void create (@RequestBody Person addedPerson){
-        personRepository.save(addedPerson);
+    public Person create (@RequestBody Person addedPerson){
+
         log.info("User Added Successfully");
+        return personRepository.save(addedPerson);
     }
     public Person getById(long id) {
         if (personRepository.existsById(id)){

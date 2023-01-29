@@ -27,14 +27,15 @@ public class PersonController {
     @Autowired
     private ExitService exitService;
     @PostMapping("/admin/addUser")
-    public ResponseEntity<Void>createUser(@Valid @RequestBody Person person){
+    public ResponseEntity<?>createUser(@Valid @RequestBody Person person){
+        Person person1;
         try{
-            this.personService.create(person);
+            person1 = this.personService.create(person);
         }catch (Exception e){
             log.error("Something was wrong");
             throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
         }
-        return new ResponseEntity<>( HttpStatus.OK);
+        return new ResponseEntity<>( person1, HttpStatus.OK);
     }
 
     @GetMapping("/allUsers")

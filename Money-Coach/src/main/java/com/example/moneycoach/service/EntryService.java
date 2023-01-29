@@ -17,9 +17,9 @@ public class EntryService {
     @Autowired
     private EntryRepository entryRepository;
 
-    public void create (@RequestBody Entry addedEntry){
-        entryRepository.save(addedEntry);
+    public Entry create (@RequestBody Entry addedEntry){
         log.info("Entry Added Successfully");
+       return entryRepository.save(addedEntry);
     }
     public Entry getById(long id) {
         if (entryRepository.existsById(id)){
@@ -50,7 +50,6 @@ public class EntryService {
 
         List<Entry> entries = entryRepository.findAll();
         Double total = 0.0;
-
         for (int i = 0; i<entries.size(); i ++){
             if (entries.get(i).getPersonId() == id){
                 total += entries.get(i).getAmount();
