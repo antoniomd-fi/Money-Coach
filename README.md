@@ -85,7 +85,7 @@ to use the API esier, but you can use an app like **insomnia** or **postman** to
 
 ### This is the swagger header
 
-<img width="1100" asrc="https://github.com/antoniomd-fi/Money-Coach/blob/main/readmeAssets/swagger1.png">
+<img width="1100" src="https://github.com/antoniomd-fi/Money-Coach/blob/main/readmeAssets/swagger1.png">
 
 ### You can test the following services:
 
