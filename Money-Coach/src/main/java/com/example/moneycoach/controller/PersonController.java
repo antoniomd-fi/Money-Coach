@@ -4,6 +4,7 @@ import com.example.moneycoach.entity.Person;
 import com.example.moneycoach.service.EntryService;
 import com.example.moneycoach.service.ExitService;
 import com.example.moneycoach.service.PersonService;
+import com.example.moneycoach.service.ProducerService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,9 @@ public class PersonController {
     private EntryService entryService;
     @Autowired
     private ExitService exitService;
+
+    @Autowired
+    private ProducerService producerService;
     @PostMapping("/admin/addUser")
     public ResponseEntity<?>createUser(@Valid @RequestBody Person person){
         Person person1;
@@ -83,5 +87,11 @@ public class PersonController {
         }
 
         return balance;
+    }
+
+    @GetMapping("/sendList")
+    public void sendList () {
+        List<Person> list = personService.getTable();
+        producerService.sendToRabbit(list);
     }
 }
