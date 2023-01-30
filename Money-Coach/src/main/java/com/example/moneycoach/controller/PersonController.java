@@ -89,7 +89,7 @@ public class PersonController {
         return balance;
     }
 
-    @GetMapping("/sendList")
+    @GetMapping("/admin/sendList")
     public void sendList () {
         List<Person> list = personService.getTable();
         producerService.sendToRabbit(list);

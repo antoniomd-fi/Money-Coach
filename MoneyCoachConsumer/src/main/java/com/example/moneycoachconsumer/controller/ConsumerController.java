@@ -22,7 +22,7 @@ public class ConsumerController {
     ConsumerService consumerService;
 
 
-    @GetMapping("/UsersList/download")
+    @GetMapping("/admin/downloadList")
     public void downloadFile(HttpServletResponse response) throws DocumentException, IOException {
 
         List<Person> list = consumerService.getPersonaList();
