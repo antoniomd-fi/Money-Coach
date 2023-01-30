@@ -81,22 +81,32 @@ You can use
 
 **localhost:3000/swagger-ui/index.html**
 
-to use the API esier, but you can use a app like **insomnia** or **postman** too.
+to use the API esier, but you can use an app like **insomnia** or **postman** too.
 
+### This is the swagger header
 
+<img width="1100" asrc="https://github.com/antoniomd-fi/Money-Coach/blob/main/readmeAssets/swagger1.png">
 
-This endpoint send a message from producer **(Proyecto 2)** to consumer **(JMS-Consumer)** through the **RabbitMQ**
-<img width="1100" alt="Get a reguster by id" src="https://github.com/antoniomd-fi/MVC-Spring-Boot/blob/main/readmeAssets/sendList.png">
+### You can test the following services:
+
+<img width="1100" src="https://github.com/antoniomd-fi/Money-Coach/blob/main/readmeAssets/swagger2.png">
+<img width="1100" src="https://github.com/antoniomd-fi/Money-Coach/blob/main/readmeAssets/swagger3.png">
+<img width="1100" src="https://github.com/antoniomd-fi/Money-Coach/blob/main/readmeAssets/swagger4.png">
+
+**don't forget which of them need a login**
 
 <a name="usage2"></a>
-## 4. Use JMS-Controller
+## 4. Use Money Coach Controller
 
-**CREATE PDF REPORT**
+Use **localhost:3000/admin/sendList** to send a report
 
-The consumer **JMS-Consumer** in port **4200** automatically receive the message and with this endopoint create a report with all the sent users
+<img width="1100" src="https://github.com/antoniomd-fi/Money-Coach/blob/main/readmeAssets/JMS1.png">
 
-<img width="1100" alt="Get a reguster by id" src="https://github.com/antoniomd-fi/MVC-Spring-Boot/blob/main/readmeAssets/createPDF.png">
-<img width="500" height="500" alt="Get a reguster by id" src="https://github.com/antoniomd-fi/MVC-Spring-Boot/blob/main/readmeAssets/download.png">
+Use **localhost:4200/admin/donwloadList** to download the PDF file with all the actual users.
+
+<img width="1100" src="https://github.com/antoniomd-fi/Money-Coach/blob/main/readmeAssets/JMS2.png">
+<img width="1100" src="https://github.com/antoniomd-fi/Money-Coach/blob/main/readmeAssets/JMS3.png">
+
 
 <a name="author"></a>
 ## 5. Author
