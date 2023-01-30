@@ -1,13 +1,19 @@
-package com.example.moneycoach.selenium;
+package com.example.moneycoach;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.devtools.v95.network.model.AuthChallengeResponse;
+import org.openqa.selenium.support.locators.RelativeLocator;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import java.util.List;
+
+import static org.testng.AssertJUnit.*;
 
 public class SeleniumTest {
 
@@ -16,8 +22,9 @@ public class SeleniumTest {
     @BeforeTest
     public void setup() {
         System.setProperty("webdriver.chrome.driver",
-                System.getProperty("user.dir")+"/chromedriver");
+                "D:\\USER\\Descargass\\chromedriver_win32\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
+        options.setBinary("D:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
         options.addArguments("start-maximized");
         options.addArguments("disable-infobars");
         options.addArguments("--disable-extensions");
@@ -33,9 +40,26 @@ public class SeleniumTest {
     }
 
     @Test
-    public void verifyGitHub(){
+    public void veryfySwaggerUI(){
         driver.get("http://localhost:3000/swagger-ui/index.html");
         String title = driver.getTitle();
-        assertEquals(title, "GitHub");
+        assertEquals(title, "Swagger UI");
     }
+
+    @Test
+    public void verifyEndPoints(){
+        driver.get("http://localhost:3000/swagger-ui/index.html");
+
+        assertNotNull(RelativeLocator.with(By.className("operation-tag-content")));
+
+    }
+
+    @Test
+    public void verifyButtons(){
+        driver.get("http://localhost:3000/swagger-ui/index.html");
+
+        assertNotNull(RelativeLocator.with(By.className("try-out__btn")));
+    }
+
+
 }
