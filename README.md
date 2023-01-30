@@ -55,14 +55,14 @@ Exist two default users on Spring Security
 
 You must create those users on database in previous order then, amd will have id **1** and test will have **2**. Those users is to simulate real users. Both passwords are: **1234**
 
-You use the previous authenticaton in the next endpoints:
+You will use the previous authenticaton in the next endpoints:
 
 * /getUser/{id}
 * /getTotalEntriesByUser/{id}
 * /getTotalExitsByUser/{id}
 * /getBalance/{id}
 
-when **{id}** will must be change to the id user, remember:
+where **{id}** will must be change to the id user, remember:
 
 * 1 to amd
 * 2 to test
