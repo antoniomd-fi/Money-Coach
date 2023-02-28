@@ -54,8 +54,8 @@ class EntryServiceTest {
         entry.setId(1L);
         entry.setAmount(10.00);
         entry.setConcept("test");
-        entry.setDate(LocalDateTime.of(2022,12,30,12,12,12));
-        entry.setPersonId(1L);
+        entry.setDate("2022-12-30");
+        entry.setPerson_id(1L);
         list.add(entry);
     }
     @Test
@@ -72,8 +72,8 @@ class EntryServiceTest {
         entry.setId(id);
         entry.setAmount(10.00);
         entry.setConcept("test");
-        entry.setDate(LocalDateTime.of(2022,12,30,12,12,12));
-        entry.setPersonId(1);
+        entry.setDate("2022-12-30");
+        entry.setPerson_id(1);
 
         when(entryRepository.save(ArgumentMatchers.any()))
                 .thenReturn(entry);
@@ -86,8 +86,8 @@ class EntryServiceTest {
         entry.setId(id);
         entry.setAmount(50.00);
         entry.setConcept("test");
-        entry.setDate(LocalDateTime.of(2022,12,30,12,12,12));
-        entry.setPersonId(1);
+        entry.setDate("2022-12-30");
+        entry.setPerson_id(1);
 
         Mockito.when(entryRepository.findById(ArgumentMatchers.anyLong()))
                         .thenReturn(Optional.of(entry));

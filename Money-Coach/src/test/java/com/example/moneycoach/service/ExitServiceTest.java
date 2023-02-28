@@ -55,8 +55,8 @@ class ExitServiceTest {
         exit.setId(1L);
         exit.setAmount(10.00);
         exit.setConcept("test");
-        exit.setDate(LocalDateTime.of(2022,12,30,12,12,12));
-        exit.setPersonId(1L);
+        exit.setDate("2022-12-30");
+        exit.setPerson_id(1L);
         list.add(exit);
     }
     @Test
@@ -73,8 +73,8 @@ class ExitServiceTest {
         exit.setId(id);
         exit.setAmount(10.00);
         exit.setConcept("test");
-        exit.setDate(LocalDateTime.of(2022,12,30,12,12,12));
-        exit.setPersonId(1);
+        exit.setDate("2022-12-30");
+        exit.setPerson_id(1);
 
         when(exitRepository.save(ArgumentMatchers.any()))
                 .thenReturn(exit);
@@ -87,8 +87,8 @@ class ExitServiceTest {
         exit.setId(id);
         exit.setAmount(50.00);
         exit.setConcept("test");
-        exit.setDate(LocalDateTime.of(2022,12,30,12,12,12));
-        exit.setPersonId(1);
+        exit.setDate("2022-12-30");
+        exit.setPerson_id(1);
 
         Mockito.when(exitRepository.findById(ArgumentMatchers.anyLong()))
                 .thenReturn(Optional.of(exit));

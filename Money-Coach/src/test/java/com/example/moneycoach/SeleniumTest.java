@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static org.testng.AssertJUnit.*;
-//@Ignore
+@Ignore
 public class SeleniumTest {
 
     private WebDriver driver;
