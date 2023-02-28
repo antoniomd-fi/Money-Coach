@@ -8,6 +8,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -51,11 +52,24 @@ public class EntryService {
         List<Entry> entries = entryRepository.findAll();
         Double total = 0.0;
         for (int i = 0; i<entries.size(); i ++){
-            if (entries.get(i).getPersonId() == id){
+            if (entries.get(i).getPerson_id() == id){
                 total += entries.get(i).getAmount();
             }
         }
 
         return total;
+    }
+
+    public List<Entry> getEntriesByUser(long id){
+        List<Entry> entries = entryRepository.findAll();
+        List<Entry> filterEntries = new ArrayList<>();
+
+        for (int i = 0; i<entries.size(); i ++){
+            if (entries.get(i).getPerson_id() == id){
+                filterEntries.add(entries.get(i));
+            }
+        }
+
+        return  filterEntries;
     }
 }

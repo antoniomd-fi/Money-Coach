@@ -9,12 +9,13 @@ import org.openqa.selenium.devtools.v95.network.model.AuthChallengeResponse;
 import org.openqa.selenium.support.locators.RelativeLocator;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 import static org.testng.AssertJUnit.*;
-
+//@Ignore
 public class SeleniumTest {
 
     private WebDriver driver;

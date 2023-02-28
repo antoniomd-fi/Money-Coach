@@ -12,9 +12,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 public class EntryController {
 
@@ -41,7 +43,7 @@ public class EntryController {
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
 
-    @GetMapping("/admin/getEntry/{id}")
+    @GetMapping("/getEntry/{id}")
     public  ResponseEntity<?> getEntry (@PathVariable("id") long id){
         Entry entry;
         try{
@@ -63,7 +65,7 @@ public class EntryController {
     }
 
     @GetMapping("/getTotalEntriesByUser/{id}")
-    public ResponseEntity<?> getTotalAmount (@PathVariable("id") long id){
+    public Double getTotalAmount (@PathVariable("id") long id){
         Double total = 0.0;
         if (personService.getById(id)==null){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User doesn't exists in database");
@@ -75,6 +77,22 @@ public class EntryController {
             log.error("Something was wrong, the user doesn't exists");
             throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
         }
-        return  ResponseEntity.ok(total);
+        return  total;
+    }
+
+    @GetMapping("/getEntriesByUser/{id}")
+    public ResponseEntity<?> getEntriesByUser (@PathVariable("id") long id){
+       List entries = new ArrayList<>();
+        if (personService.getById(id)==null){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User doesn't exists in database");
+        }
+        try {
+           entries = entryService.getEntriesByUser(id);
+        }
+        catch (Exception e){
+            log.error("Something was wrong, the user doesn't exists");
+            throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
+        }
+        return  ResponseEntity.ok(entries);
     }
 }

@@ -1,5 +1,6 @@
 package com.example.moneycoach.controller;
 
+import com.beust.ah.A;
 import com.example.moneycoach.entity.Person;
 import com.example.moneycoach.service.EntryService;
 import com.example.moneycoach.service.ExitService;
@@ -14,10 +15,15 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 
 @Slf4j
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 public class PersonController {
 
@@ -30,7 +36,7 @@ public class PersonController {
 
     @Autowired
     private ProducerService producerService;
-    @PostMapping("/admin/addUser")
+    @PostMapping("/addUser")
     public ResponseEntity<?>createUser(@Valid @RequestBody Person person){
         Person person1;
         try{
@@ -67,7 +73,7 @@ public class PersonController {
         }
     }
 
-    @DeleteMapping("/admin/deleteUser/{id}")
+    @DeleteMapping("/deleteUser/{id}")
     public void deletePerson (@PathVariable("id") long id){
         this.personService.delete(id);
     }
@@ -89,7 +95,27 @@ public class PersonController {
         return balance;
     }
 
-    @GetMapping("/admin/sendList")
+    @GetMapping("/getEntriesAndExits/{id}")
+    public List<Map<String, Object>> getData(@PathVariable("id") long id) {
+
+        List<Double> data = new ArrayList<>();
+        data.add(exitService.getTotalAmountByUser(id));
+        data.add(entryService.getTotalAmountByUser(id));
+
+        List<Map<String, Object>> finalList = new ArrayList<>();
+        Map<String, Object> item = new HashMap<>();
+        Map<String, Object> item2 = new HashMap<>();
+        item.put("name", "Exits");
+        item.put("value", data.get(0));
+        finalList.add(item);
+        item2.put("name", "Entries");
+        item2.put("value", data.get(1));
+        finalList.add(item2);
+
+        return finalList;
+    }
+
+    @GetMapping("/sendList")
     public void sendList () {
         List<Person> list = personService.getTable();
         producerService.sendToRabbit(list);

@@ -9,6 +9,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -33,7 +34,7 @@ public class ExitService {
     }
 
     public List<Exit> getTable(){
-        return exitRepository.findAll(Sort.by("id").ascending());
+        return exitRepository.findAll(/*Sort.by("id").ascending()*/);
     }
 
     public Exit update(Integer id, String concept, Double amount){
@@ -56,11 +57,24 @@ public class ExitService {
         Double total = 0.0;
 
         for (int i = 0; i<exits.size(); i ++){
-            if (exits.get(i).getPersonId() == id){
+            if (exits.get(i).getPerson_id() == id){
                 total += exits.get(i).getAmount();
             }
         }
 
         return total;
+    }
+
+    public List<Exit> getExitsById(long id){
+        List<Exit> exits = exitRepository.findAll();
+        List<Exit> filterEntries = new ArrayList<>();
+
+        for (int i = 0; i<exits.size(); i ++){
+            if (exits.get(i).getPerson_id() == id){
+                filterEntries.add(exits.get(i));
+            }
+        }
+
+        return  filterEntries;
     }
 }

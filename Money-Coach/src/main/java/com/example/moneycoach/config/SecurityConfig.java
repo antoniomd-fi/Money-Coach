@@ -21,10 +21,10 @@ public class SecurityConfig {
                 .authorizeHttpRequests()
                 .requestMatchers("/admin/**")
                 .hasRole("ADMIN")
-                .requestMatchers("/getUser/1", "/getBalance/1",  "/getTotalEntriesByUser/1", "/getTotalExitsByUser/1")
+                /*.requestMatchers("/getUser/1", "/getBalance/1",  "/getTotalEntriesByUser/1", "/getTotalExitsByUser/1")
                 .hasAnyRole("USER1", "ADMIN")
                 .requestMatchers("/getUser/2", "/getBalance/2",  "/getTotalEntriesByUser/2", "/getTotalExitsByUser/2")
-                .hasAnyRole("USER2", "ADMIN")
+                .hasAnyRole("USER2", "ADMIN")*/
                 .anyRequest()
                 .anonymous()
                 .and()

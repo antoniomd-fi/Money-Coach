@@ -11,9 +11,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 public class ExitController {
     @Autowired
@@ -64,7 +66,7 @@ public class ExitController {
     }
 
     @GetMapping("/getTotalExitsByUser/{id}")
-    public ResponseEntity<?> getTotalAmount (@PathVariable("id") long id){
+    public Double getTotalAmount (@PathVariable("id") long id){
         Double total = 0.0;
         if (personService.getById(id)==null){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User doesn't exists in database");
@@ -76,6 +78,22 @@ public class ExitController {
             log.error("Something was wrong, the user doesn't exists");
             throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
         }
-        return  ResponseEntity.ok(total);
+        return  total;
+    }
+
+    @GetMapping("/getExitsByUser/{id}")
+    public ResponseEntity<?> getEntriesByUser (@PathVariable("id") long id){
+        List exits = new ArrayList<>();
+        if (personService.getById(id)==null){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User doesn't exists in database");
+        }
+        try {
+            exits = exitService.getExitsById(id);
+        }
+        catch (Exception e){
+            log.error("Something was wrong, the user doesn't exists");
+            throw  new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Error");
+        }
+        return  ResponseEntity.ok(exits);
     }
 }
