@@ -14,7 +14,7 @@ public class CorsConfiguration {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://money-coach.netlify.app") // Cambiar por el dominio que esté haciendo la solicitud
+                        .allowedOrigins("http://localhost:3000") // Cambiar por el dominio que esté haciendo la solicitud
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*");
             }
